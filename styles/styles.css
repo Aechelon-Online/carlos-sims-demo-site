@@ -1,0 +1,209 @@
+.info, .info-wrapper, .nav-header__logo, .nav-header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaushan Script", sans-serif;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0;
+}
+
+.nav-header {
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  background: rgb(254, 254, 254);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+.nav-header__wrapper {
+  width: 80%;
+  margin-top: 2vh;
+  margin-right: 2vh;
+  flex-direction: column;
+  align-items: flex-end;
+}
+@media screen and (min-width: 600px) {
+  .nav-header__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.nav-header__logo {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.nav-header__logo-seenit {
+  width: 15vh;
+  height: 15vh;
+  margin: 0;
+}
+.nav-header__title {
+  margin: 0;
+  font-size: clamp(18px, 4.8vw, 24px);
+  letter-spacing: 2px;
+}
+@media screen and (min-width: 600px) {
+  .nav-header__title {
+    font-size: clamp(24px, 5vw, 40px);
+    letter-spacing: 2px;
+  }
+}
+.nav-header__navbar {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-header__navbar--links {
+  margin: 10px;
+  font-size: clamp(12px, 3vw, 16px);
+  letter-spacing: 1px;
+}
+@media screen and (min-width: 600px) {
+  .nav-header__navbar--links {
+    margin: 10px 2.5vw;
+    font-size: clamp(16px, 3vw, 24x);
+  }
+}
+
+.pic-wrapper {
+  padding-top: 17vh;
+  padding-bottom: 2vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 10px;
+}
+.pic-wrapper__gallery {
+  padding: 17vh 20px 2vh 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+  grid-template-rows: repeat(2, minmax(38vh, 150px));
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(240px, 400px);
+  overflow-x: auto;
+  gap: 20px;
+}
+@media screen and (min-width: 600px) {
+  .pic-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pic-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.pic-wrapper__grid, .pic-wrapper__grid__gallery {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info-wrapper {
+  position: relative;
+  height: 100vh;
+  flex-direction: column;
+}
+.info-wrapper__pic-contact {
+  position: absolute;
+  background-size: cover;
+  opacity: 0.2;
+  top: -4vh;
+  z-index: -1;
+  width: clamp(1000px, 100vw, 1200px);
+}
+
+.info {
+  flex-direction: column;
+  margin-bottom: clamp(20px, 10vw, 40px);
+  margin-top: 30vw;
+}
+.info__phone-number, .info__e-mail {
+  margin: 5px;
+  font-family: Arial;
+  font-weight: bolder;
+}
+.info__phone-number {
+  font-size: clamp(20px, 7vw, 50px);
+}
+.info__e-mail {
+  font-size: clamp(14px, 5vw, 40px);
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-logos {
+  width: clamp(50px, 10vw, 100px);
+  margin: 2vw;
+}
+
+.bio {
+  padding-top: 10vh;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(12, 8vw);
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+}
+.bio__pic-img {
+  grid-column: 2/span 8;
+  grid-row: 5/10;
+  width: clamp(200px, 70vw, 800px);
+}
+@media screen and (min-width: 600px) {
+  .bio__pic-img {
+    grid-column: 2/span 8;
+    grid-row: 2/6;
+    width: clamp(200px, 70vw, 800px);
+  }
+}
+.bio__text-p {
+  font-size: clamp(0.8rem, 3vw, 2rem);
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.9);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  grid-column: 6/span 6;
+  grid-row: 9/-1;
+}
+@media screen and (min-width: 600px) {
+  .bio__text-p {
+    font-size: clamp(0.8rem, 3vw, 2rem);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.9);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-column: 6/span 6;
+    grid-row: 6/-1;
+  }
+}/*# sourceMappingURL=styles.css.map */
