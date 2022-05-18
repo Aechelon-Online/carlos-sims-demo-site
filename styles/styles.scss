@@ -71,11 +71,11 @@ nav li {
 
     &__title {
         margin: 0;
-        font-size: clamp(18px, 4.8vw, 24px);
+        font-size: clamp(18px, 5vw, 24px);
         letter-spacing: 2px;
 
         @include tablet {
-            font-size: clamp(24px, 5vw, 40px);
+            font-size: clamp(24px, 4.8vw, 40px);
             letter-spacing: 2px;
         }
 
@@ -89,7 +89,7 @@ nav li {
 
         &--links {
             margin: 10px;
-            font-size: clamp(12px, 3vw, 16px);
+            font-size: clamp(12px, 3vw, 24px);
             letter-spacing: 1px;
 
             @include tablet {
