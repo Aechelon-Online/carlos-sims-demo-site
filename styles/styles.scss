@@ -94,7 +94,7 @@ nav li {
 
             @include tablet {
                 margin: 10px 2.5vw;
-                font-size: clamp(16px, 3vw, 24x);
+                font-size: clamp(16px, 3vw, 24px);
             }
         }
     }
