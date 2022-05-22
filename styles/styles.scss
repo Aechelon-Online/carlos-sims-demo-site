@@ -76,7 +76,7 @@ nav li {
         letter-spacing: 2px;
 
         @include tablet {
-            font-size: clamp(24px, 4.5vw, 40px);
+            font-size: clamp(24px, 4.5vw, 32px);
             letter-spacing: 2px;
         }
 
