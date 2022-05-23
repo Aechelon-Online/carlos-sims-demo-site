@@ -3,20 +3,12 @@ const pics = ['carlos-sims-cheetahs.jpg', 'carlos-sims-beard.jpg', 'carlos-sims-
 
 for(j = 0; j < 3; j++) {
     for(let i = 0; i < pics.length; i++) {
-        const wrapper = document.querySelector(".pic-wrapper")
+        const wrapper = document.querySelector(".pics")
         const gallery = `<img src="../img/${pics[i]}" alt="" class="pic-wrapper__grid" />`
         wrapper.innerHTML += gallery
     }
 }
 
-
-// for(i = 0; i<3; i++) {
-    // picsGallery.forEach(picGallery => {
-    //     const wrapperGallery = document.querySelector(".pic-wrapper__gallery")
-    //     const galleryWrapper = `<img src="../img/${picGallery}" alt="" class="pic-wrapper__grid" />`
-    //     wrapperGallery.innerHTML += galleryWrapper
-    // })
-// }
 
 
 
